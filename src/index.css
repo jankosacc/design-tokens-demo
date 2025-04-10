@@ -1,0 +1,6 @@
+@import 'css/variables.css';
+
+body {
+  color: var(--global-color-font);
+  background: var(--global-color-background);
+}
