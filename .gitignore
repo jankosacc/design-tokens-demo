@@ -1,4 +1,6 @@
 /node_modules/
+/dist/
+.parcel-cache/
 package-lock.json
 /src/css/variables.css
 tokens.json
