@@ -22,6 +22,28 @@ const sd = new StyleDictionary({
         },
       ],
     },
+    scss: {
+      transformGroup: "scss",
+      prefix: "sd",
+      buildPath: "./src/scss/",
+      files: [
+        {
+          destination: "_variables.scss",
+          format: "scss/variables"
+        }
+      ],
+      actions: ["copy_assets"]
+    },
+    android: {
+      transforms: ["attribute/cti", "name/snake", "color/hex", "size/remToSp", "size/remToDp"],
+      buildPath: "./src/android/src/main/res/values/",
+      files: [
+        {
+          destination: "style_dictionary_colors.xml",
+          format: "android/colors"
+        }
+      ]
+    }
   },
 });
 
